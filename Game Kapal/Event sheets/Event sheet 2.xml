@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 2</name>
+    <events>
+        <event-block sid="969926307304295">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="627473460446439" type="System" />
+            </conditions>
+            <actions>
+                <action id="-13" name="Set time scale" sid="538473897825630" type="System">
+                    <param id="0" name="Time scale">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="446211207539282" type="textScore">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set text" sid="864271652587639" type="textOver">
+                    <param id="0" name="Text">&quot;Game Over&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="679443111625501" type="textScoreMenu">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set text" sid="432196437285094" type="textScoreMenu">
+                    <param id="0" name="Text">&quot;Socre : &quot;&amp;Score</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="366949942326696">
+            <conditions>
+                <condition id="0" name="On clicked" sid="765003810838879" type="Mulai" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="507181049996172" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="656108028527024" type="System">
+                    <param id="0" name="Variable">TimeLfet</param>
+                    <param id="1" name="Value">5</param>
+                </action>
+                <action id="-13" name="Set time scale" sid="460339691782787" type="System">
+                    <param id="0" name="Time scale">1.0</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="766466781912297" type="System">
+                    <param id="0" name="Layout">Layout 1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

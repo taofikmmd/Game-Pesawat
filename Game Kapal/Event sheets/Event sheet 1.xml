@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable constant="0" name="Score" sid="988618873542098" static="0" type="number">0</variable>
+        <variable constant="0" name="TimeLfet" sid="154902698884783" static="0" type="number">4</variable>
+        <event-block sid="397514638752770">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="875315002093268" type="Plane">
+                    <param id="0" name="Object">star</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="650876264833809" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">100</param>
+                </action>
+                <action id="0" name="Set text" sid="108495486734824" type="textScore">
+                    <param id="0" name="Text">&quot;Score: &quot;&amp;Score</param>
+                </action>
+                <action id="-9" name="Destroy" sid="534422749636815" type="star" />
+            </actions>
+        </event-block>
+        <event-block sid="679586438595226">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="585058931752471" type="Plane">
+                    <param id="0" name="Object">star2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="892501475703906" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">300</param>
+                </action>
+                <action id="0" name="Set text" sid="720724024474965" type="textScore">
+                    <param id="0" name="Text">&quot;Score: &quot;&amp;Score</param>
+                </action>
+                <action id="-9" name="Destroy" sid="306666453582895" type="star2" />
+            </actions>
+        </event-block>
+        <event-block sid="529266643408447">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="285736700445218" type="Plane">
+                    <param id="0" name="Object">star3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="880282952043494" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">400</param>
+                </action>
+                <action id="0" name="Set text" sid="137639735124663" type="textScore">
+                    <param id="0" name="Text">&quot;Score: &quot;&amp;Score</param>
+                </action>
+                <action id="-9" name="Destroy" sid="822246207090227" type="star3" />
+            </actions>
+        </event-block>
+        <event-block sid="446120840404559">
+            <conditions />
+            <actions />
+        </event-block>
+        <event-block sid="577440608578069">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="769777179002665" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="348471046399466" type="System">
+                    <param id="0" name="Variable">TimeLfet</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="765198411331428" type="timeGame">
+                    <param id="0" name="Text">&quot;Time: &quot;&amp;TimeLfet</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="975287392631630">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="919666544476723" type="System">
+                    <param id="0" name="Variable">TimeLfet</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="836821343603511" type="System">
+                    <param id="0" name="Variable">TimeLfet</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-13" name="Set time scale" sid="218667937253645" type="System">
+                    <param id="0" name="Time scale">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="411881887125652" type="textOver">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="984468429332838" type="textScoreMenu">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="2" name="Set visible" sid="363250598286909" type="Mulai">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="756427830301353" type="System">
+                    <param id="0" name="Layout">menu</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="199764757069946">
+            <conditions>
+                <condition id="0" name="On clicked" sid="263086865684764" type="Mulai" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="438670037264102" type="System">
+                    <param id="0" name="Layout">Layout 1</param>
+                </action>
+                <action id="-21" name="Reset global variables" sid="293806301438093" type="System" />
+                <action id="-26" name="Restart layout" sid="758247630071439" type="System" />
+                <action id="-13" name="Set time scale" sid="150809326876495" type="System">
+                    <param id="0" name="Time scale">1.0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
