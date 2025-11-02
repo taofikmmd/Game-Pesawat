@@ -2,7 +2,7 @@
 
 # README – Game Pesawat
 
-## Nama Game
+## Kapal Hibeur Bintang
 
 **[Game Pesawat Terbang]**
 
