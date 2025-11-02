@@ -4,7 +4,7 @@
 
 ## Nama Game
 
-**[Masukkan Nama Game di Sini]**
+**[Game Pesawat Terbang]**
 
 ## Deskripsi
 
