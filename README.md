@@ -1,6 +1,4 @@
-Tentu! Aku buatkan contoh **README** yang profesional dan informatif untuk **game pesawat buatanmu di Construct 2**. Kamu bisa menyesuaikan bagian tertentu seperti nama game, fitur, atau cara main sesuai versi finalmu.
 
----
 
 # README – Game Pesawat
 
@@ -85,8 +83,4 @@ Email: [[email_kamu@example.com](mailto:email_kamu@example.com)]
 
 Game ini dilisensikan di bawah **[pilih lisensi, misal MIT]**.
 
----
 
-Kalau mau, aku bisa buatkan **versi README yang lebih “menarik visual”**, misalnya menambahkan screenshot game pesawat, GIF gameplay, atau link langsung ke demo online.
-
-Apakah mau aku buatkan versi itu juga?
